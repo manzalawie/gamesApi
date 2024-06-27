@@ -1,0 +1,67 @@
+header img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: rgb(39, 43, 48);
+  color: #fff;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: #09c !important;
+  transition: color 0.5s;
+}
+nav {
+  background-color: rgb(58, 73, 123) !important;
+  margin-inline: auto;
+  margin-top: -30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+nav ul li a {
+  color: #fff !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff !important;
+}
+.games-section .row .col-md-3 {
+  transition: all 0.5s ease;
+}
+.games-section .row .col-md-3:hover {
+  transform: scale(1.05);
+}
+.details {
+  background-color: #272729be;
+  backdrop-filter: blur(4px);
+  min-height: 100vh;
+}
+.loading {
+  height: 100vh;
+}
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  animation: l2-1 2s infinite linear, l2-2 1s infinite steps(1) alternate;
+}
+@keyframes l2-1 {
+  0% {
+    transform: perspective(150px) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(150px) rotateX(360deg);
+  }
+}
+@keyframes l2-2 {
+  0% {
+    background: #ffa516;
+  }
+  50% {
+    background: #f03355;
+  }
+}
